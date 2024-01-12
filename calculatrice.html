@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-heading">
+            <a href="/" class="show">Faire apparaître la calculatrice</a>
+            <span>/</span>
+            <a href="/" class="hide">Faire disparaître la calculatrice</a>
+        </div>
+        <form action="" class="form-container visible">
+            <div class="numbers">
+                <label for="nb1">Premier nombre : </label>
+                <input type="number" name="nb1" id="nb1">
+                <div class="field-info hidden">
+                    <p>saisir 1 chiffre</p>
+                </div>
+                <label for="nb2">Deuxième nombre : </label>
+                <input type="number" name="nb2" id="nb2">
+                <div class="field-info hidden">
+                    <p>saisir 1 chiffre</p>
+                </div>
+            </div>
+            <select name="select" id="select" class="select">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <div class="field-info-select">
+                <p>saisir le type d'opération</p>
+            </div>
+            <button type="submit" disabled class="btn-calc">Calculer</button>
+        </form>
+        
+    </div>
+</body>
+</html>

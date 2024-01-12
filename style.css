@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: column;
+    gap:50px;
+}
+.form-container{
+    display: flex;
+    gap:50px;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 30px;
+    border-radius: 20px;
+    opacity:0;
+    transition: all .3s;
+}
+.numbers{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.select{
+    height:100%;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    transition: all .3s;
+}
+a:visited{
+    color:black;
+}
+.hidden{
+    display: none;
+}
+.active{
+    color:blueviolet !important;
+}
+.field-info{
+    background-color: crimson;
+    margin:20px 0;
+    width: 100%;
+    position: absolute;
+    left:-220px;
+    opacity: 0;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.field-info-select{
+    background-color: crimson;
+    width: 200px;
+    position: absolute;
+    opacity: 0;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    left: 115px;
+    top: 50px;
+    right: 0;
+    margin: auto auto;
+}
+.visible{
+    opacity:1;
+}
